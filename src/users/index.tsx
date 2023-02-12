@@ -19,3 +19,12 @@ export const UserCreate = (props: ResourceComponentInjectedProps) => (
         </SimpleForm>
     </Create>
 );
+export const products = (props: ResourceComponentInjectedProps) => (
+    <List {...props}>
+        <Datagrid rowClick="edit">
+            <TextField source="id" />
+            <TextField source="name" />
+            <TextField source="username" />
+        </Datagrid>
+    </List>
+);
